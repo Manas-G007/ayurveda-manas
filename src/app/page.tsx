@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 export default function ImageGallery() {
     const images = [
-        'https://picsum.photos/300',
-        'https://picsum.photos/301',
-        'https://picsum.photos/302',
+        "/img1.jpg",
+        "/img2.jpg",
+        "/img3.jpg"
     ];
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -25,6 +25,8 @@ export default function ImageGallery() {
                         >
                             <Image
                                 src={src}
+                                width={300}
+                                height={300}
                                 alt={`Image ${index + 1}`}
                                 className="w-full h-full object-cover"
                             />
